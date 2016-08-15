@@ -98,7 +98,7 @@ msgstr ""
 msgid "Enter Ad slot name here"
 msgstr ""
 
-#: wp-dfp/wp-dfp-frontend.php:186
+#: wp-dfp/wp-dfp-frontend.php:189
 msgid "WP_DFP: You must supply your DFP network code in the <a target=\"_blank\" href=\"%s\">WP DFP settings</a> screen."
 msgstr ""
 
@@ -124,6 +124,10 @@ msgstr ""
 
 #: wp-dfp/wp-dfp-settings.php:187
 msgid "If you would like, you can specifiy a prefix that will be added to every slot size"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:191
+msgid "Enable debug"
 msgstr ""
 
 #: wp-dfp/wp-dfp.php:103

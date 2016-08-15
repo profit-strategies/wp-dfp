@@ -186,6 +186,11 @@ class WP_DFP_Settings {
 				'#label'       => __( 'Slot Prefix', 'wp-dfp' ),
 				'#description' => __( 'If you would like, you can specifiy a prefix that will be added to every slot size', 'wp-dfp' ),
 			),
+			'enable_debug' => array(
+			  '#name'        => self::input_name( 'enable_debug' ),
+      	'#label'       => __( 'Enable debug', 'wp-dfp' ),
+      	'#type'        => 'checkbox',
+      ),
 			'submit' => array(
 				'#type' => 'markup',
 				'#markup' => get_submit_button(),

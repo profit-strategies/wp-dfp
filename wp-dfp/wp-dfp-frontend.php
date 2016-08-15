@@ -180,6 +180,9 @@ class WP_DFP_Frontend {
 		// Set message defaults
 		$messages = array( 'noNetworkCode' => null );
 
+		// Get debug flag
+    $enable_debug = WP_DFP_Settings::get( 'enable_debug' );
+
 		/* If current user can manage options and a network code is not defined
 		then display an message in each in-page ad slot */
 		if ( empty( $network_code ) && current_user_can( 'manage_options' ) ) {
@@ -192,6 +195,7 @@ class WP_DFP_Frontend {
 			'targeting' => array_map( $to_string, self::$targeting ),
 			'slots'     => $slots,
 			'messages'  => $messages,
+			'enable_debug' => $enable_debug
 		) );
   }
 
