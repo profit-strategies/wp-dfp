@@ -40,7 +40,7 @@ class WP_DFP_Frontend {
 	 * @action wp_enqueue_scripts
 	 */
 	public static function register_scripts() {
-		wp_register_script( 'jquery-dfp', WP_DFP::url( 'js/jquery.dfp.js' ), array( 'jquery' ), '2.1.0', TRUE );
+		wp_register_script( 'jquery-dfp', WP_DFP::url( 'js/jquery.dfp.js' ), array( 'jquery' ), '2.4.2', TRUE );
 		wp_register_script( 'wp-dfp', WP_DFP::url( 'js/wp-dfp.js' ), array( 'jquery-dfp' ), WP_DFP::VERSION, TRUE );
 	}
 
