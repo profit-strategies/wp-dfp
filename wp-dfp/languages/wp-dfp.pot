@@ -14,6 +14,10 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
+#: wp-dfp/widget.wp-dfp-ad_position.php:88, wp-dfp/wp-dfp-admin.php:207, wp-dfp/wp-dfp-admin.php:267
+msgid "Slot Name"
+msgstr ""
+
 #: wp-dfp/wp-dfp-admin.php:82
 msgid "Clone"
 msgstr ""
@@ -24,10 +28,6 @@ msgstr ""
 
 #: wp-dfp/wp-dfp-admin.php:157
 msgid "WP_DFP: A DFP network code is required for WP DFP to function correctly. Please have an admin set a network code ASAP."
-msgstr ""
-
-#: wp-dfp/wp-dfp-admin.php:207, wp-dfp/wp-dfp-admin.php:267
-msgid "Slot Name"
 msgstr ""
 
 #: wp-dfp/wp-dfp-admin.php:208
@@ -130,38 +130,38 @@ msgstr ""
 msgid "Enable debug"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:103
+#: wp-dfp/wp-dfp.php:110
 msgid "Ad Slot"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:104
+#: wp-dfp/wp-dfp.php:111
 msgid "Ad Slots"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:110
+#: wp-dfp/wp-dfp.php:117
 msgid "Add New %s"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:111
+#: wp-dfp/wp-dfp.php:118
 msgid "Edit %s"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:112
+#: wp-dfp/wp-dfp.php:119
 msgid "New %s"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:113
+#: wp-dfp/wp-dfp.php:120
 msgid "View %s"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:114
+#: wp-dfp/wp-dfp.php:121
 msgid "Search %s"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:115
+#: wp-dfp/wp-dfp.php:122
 msgid "No %s found"
 msgstr ""
 
-#: wp-dfp/wp-dfp.php:116
+#: wp-dfp/wp-dfp.php:123
 msgid "No %s found trash"
 msgstr ""

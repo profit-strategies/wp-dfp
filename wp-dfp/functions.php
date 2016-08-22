@@ -71,3 +71,60 @@ if ( !function_exists( 'wp_dfp_settings_url' ) ) {
 	}
 
 }
+
+
+if ( !function_exists( 'wp_dfp_get_ad_positions' ) ) {
+	/**
+	 * Returns array of DFP_Ad_Position objects
+	 *
+	 * @since 0.2.5
+	 *
+	 * @return array
+	 */
+	function wp_dfp_get_ad_positions() {
+		$args = array(
+			'post_type'           => WP_DFP::POST_TYPE,
+			'post_status'         => 'publish',
+			'posts_per_page'      => - 1,
+			'ignore_sticky_posts' => 1
+		);
+		/**
+		 * @var WP_Query $all_ads
+		 */
+		$all_ads = new WP_Query( $args );
+		$positions = array();
+		if ( $all_ads->have_posts() ) {
+			while ( $all_ads->have_posts() ) :
+				$all_ads->the_post();
+				$positions[] = get_post();
+			endwhile;
+		}
+		//foreach ( $positions as $key => $position ) {
+		//	if ( $position->post_id == null ) {
+		//		unset( $positions[ $key ] );
+		//	}
+		//}
+		wp_reset_query();
+		return $positions;
+	}
+
+}
+
+
+if ( !function_exists( 'wp_dfp_ad_select_options' ) ) {
+	/**
+	 * Creates Select Options for widget
+	 *
+	 * @since  0.2.0
+	 * @access public
+	 *
+	 * @param int|string $value Value
+	 */
+	function wp_dfp_ad_select_options( $value ) {
+		echo '<option value="false">Select Position</option>';
+		$positions = wp_dfp_get_ad_positions();
+		foreach ( $positions as $position ) {
+			echo '<option' . selected( $value, $position->post_name ) . ' value="' . $position->post_name . '">(' . $position->post_name . ') ' . $position->post_title . '</option>';
+		}
+	}
+}
