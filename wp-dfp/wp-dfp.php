@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: WP DFP
-Plugin URI:  https://github.com/profit-strategies/wp-dfp/
+Plugin URI:  https://github.com/profit-strategies/wp-dfp
 Description: A simple & intuitive interface for displaying Google ads on your WP site
 Version:     1.1.8-psi
 Author:      Oomph, Inc.

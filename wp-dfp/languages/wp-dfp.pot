@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
-#: wp-dfp/widget.wp-dfp-ad_position.php:88, wp-dfp/wp-dfp-admin.php:207, wp-dfp/wp-dfp-admin.php:267
+#: wp-dfp/widget.wp-dfp-ad_position.php:89, wp-dfp/wp-dfp-admin.php:207, wp-dfp/wp-dfp-admin.php:267
 msgid "Slot Name"
 msgstr ""
 
