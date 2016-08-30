@@ -180,11 +180,29 @@ class WP_DFP_Settings {
 				'#label'       => __( 'Network Code', 'wp-dfp' ),
 				'#description' => __( 'Your network code as found in your DFP account.', 'wp-dfp' ),
 			),
+			'prod_url' => array(
+				'#type'        => 'text',
+				'#name'        => self::input_name( 'prod_url' ),
+				'#label'       => __( 'Production URL', 'wp-dfp' ),
+				'#description' => __( 'Enter a production url for which the PROD slot prefix will be applied', 'wp-dfp' ),
+			),
 			'slot_prefix' => array(
 				'#type'        => 'text',
 				'#name'        => self::input_name( 'slot_prefix' ),
 				'#label'       => __( 'Slot Prefix', 'wp-dfp' ),
-				'#description' => __( 'If you would like, you can specifiy a prefix that will be added to every slot size', 'wp-dfp' ),
+				'#description' => __( 'If you would like, you can specifiy a prefix that will be added to every PROD slot size', 'wp-dfp' ),
+			),
+			'qa_url' => array(
+				'#type'        => 'text',
+				'#name'        => self::input_name( 'qa_url' ),
+				'#label'       => __( 'QA URL', 'wp-dfp' ),
+				'#description' => __( 'Enter a QA url for which the QA slot prefix will be applied', 'wp-dfp' ),
+			),
+			'slot_prefix_qa' => array(
+				'#type'        => 'text',
+				'#name'        => self::input_name( 'slot_prefix_qa' ),
+				'#label'       => __( 'Slot Prefix QA', 'wp-dfp' ),
+				'#description' => __( 'If you would like, you can specifiy a prefix that will be added to every QA slot size', 'wp-dfp' ),
 			),
 			'enable_debug' => array(
 			  '#name'        => self::input_name( 'enable_debug' ),

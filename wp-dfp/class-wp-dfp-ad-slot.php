@@ -87,8 +87,18 @@ class WP_DFP_Ad_Slot {
 			return '';
 		}
 
+		$slot_prefix_to_use = "";
+
 		WP_DFP::inc( 'wp-dfp-settings.php' );
-		return WP_DFP_Settings::get( 'slot_prefix', '' ) . $this->post->post_title;
+		switch (site_url()) {
+				case WP_DFP_Settings::get( 'prod_url', '' ):
+						$slot_prefix_to_use = WP_DFP_Settings::get( 'slot_prefix', '' );
+						break;
+				case WP_DFP_Settings::get( 'qa_url', '' ):
+						$slot_prefix_to_use = WP_DFP_Settings::get( 'slot_prefix_qa', '' );
+						break;
+		}
+		return $slot_prefix_to_use . $this->post->post_title;
 	}
 
 	/**

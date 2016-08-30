@@ -119,14 +119,38 @@ msgid "Your network code as found in your DFP account."
 msgstr ""
 
 #: wp-dfp/wp-dfp-settings.php:186
-msgid "Slot Prefix"
+msgid "Production URL"
 msgstr ""
 
 #: wp-dfp/wp-dfp-settings.php:187
-msgid "If you would like, you can specifiy a prefix that will be added to every slot size"
+msgid "Enter a production url for which the PROD slot prefix will be applied"
 msgstr ""
 
-#: wp-dfp/wp-dfp-settings.php:191
+#: wp-dfp/wp-dfp-settings.php:192
+msgid "Slot Prefix"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:193
+msgid "If you would like, you can specifiy a prefix that will be added to every PROD slot size"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:198
+msgid "QA URL"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:199
+msgid "Enter a QA url for which the QA slot prefix will be applied"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:204
+msgid "Slot Prefix QA"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:205
+msgid "If you would like, you can specifiy a prefix that will be added to every QA slot size"
+msgstr ""
+
+#: wp-dfp/wp-dfp-settings.php:209
 msgid "Enable debug"
 msgstr ""
 
